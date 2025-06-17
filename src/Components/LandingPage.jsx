@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../assets/store-logo.jpg";
 
 export default function LandingPage() {
@@ -9,7 +10,9 @@ export default function LandingPage() {
           Trendy, comfortable, and affordable clothing for every style — shop
           the latest looks with ease.
         </p>
-        <button className="landing-btn">Get started</button>
+        <Link to="/login" className="landing-btn">
+          Get started
+        </Link>
       </div>
       <div className="landing-image">
         <img src={logo} alt="logoImage" />

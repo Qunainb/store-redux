@@ -58,7 +58,7 @@ img {
 }
 
 .form-container {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(188, 173, 173, 0.4);
   padding: 60px 40px;
   border-radius: 5px;
 }
@@ -69,6 +69,7 @@ img {
 }
 
 .form-control input {
+  margin-top: 5px;
   border: 1px solid black;
   width: 100%;
   padding: 8px 0;
@@ -90,7 +91,7 @@ img {
 
 .form-container a {
   text-decoration: none;
-  color: blue;
+  color: rgb(23, 65, 173);
 }
 
 .text {

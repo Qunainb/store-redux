@@ -4,8 +4,14 @@ import { useSelector } from "react-redux";
 import { useEffect } from "react";
 
 export default function LandingPage() {
-  const isAuth = useSelector((state) => state.isAuthenticated);
   const navigate = useNavigate();
+  const isAuth = useSelector((state) => state.isAuthenticated);
+
+  useEffect(() => {
+    if (isAuth) {
+      navigate("/main");
+    }
+  }, [isAuth, navigate]);
 
   return (
     <main className="container">
